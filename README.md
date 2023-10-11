@@ -21,3 +21,5 @@ from transform import pipeline
 
 transform = pipeline("translation_ru_to_en","Helsinki-NLP/opus-mt-ru-en")
 print(transform("Привет мир")
+
+
