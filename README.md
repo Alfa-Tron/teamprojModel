@@ -17,9 +17,7 @@
 Пример использования модели в Python:
 
 ```python
-from my_translation_model import translate
+from transform import pipeline
 
-source_text = "Привет, как дела?"
-target_text = translate(source_text, source_language="ru", target_language="en")
-
-print(f"Перевод: {target_text}")
+transform = pipeline("translation_ru_to_en","Helsinki-NLP/opus-mt-ru-en")
+print(transform("Привет мир")
