@@ -1,1 +1,1 @@
-transformers sentencepiece
+transformers
