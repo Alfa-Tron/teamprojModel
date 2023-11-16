@@ -1,4 +1,3 @@
-import io
 import streamlit as st
 from main import translator
 
