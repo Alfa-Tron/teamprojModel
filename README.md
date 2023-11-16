@@ -21,6 +21,7 @@ from transform import pipeline
 
 transform = pipeline("translation_ru_to_en","Helsinki-NLP/opus-mt-ru-en")
 print(transform("Привет мир")
+```
 
 
 ## Описание работы программы в streamlit
@@ -68,3 +69,4 @@ curl -X 'POST' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{"text": "Привет, я модель машинного обучения, предназначенная для перевода текста!"}'
+```
