@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 from api import app
 
+
 client = TestClient(app)
 
 
@@ -22,6 +23,3 @@ def test_translate_pr():
     json_data = responce.json()
     assert responce.status_code == 200
     assert json_data["Translated text"] == "Kolya and Arsen and Engineering."
-
-
-
